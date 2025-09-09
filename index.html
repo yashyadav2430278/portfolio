@@ -3,193 +3,183 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Personal Portfolio Website</title>
+  <title>Yash | Portfolio</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css" />
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- Font Awesome Icons -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
-<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
-
-  <!-- --------Header-------- -->
-  <div id="header">
+  <!-- ===== HEADER ===== -->
+  <header id="header">
     <div class="container">
-      <nav>
-        <!-- Theme Toggle Button -->
-<button id="theme-toggle" class="theme-btn">
-  <i class="fas fa-sun"></i>
-</button>
-
-        <img src="" class="logo" alt="logo" />
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#About">About</a></li>
+      <nav data-aos="fade-down">
+        <button id="theme-toggle" class="theme-btn">
+          <i class="fas fa-sun"></i>
+        </button>
+        <a href="#" class="logo">Yash</a>
+        <ul class="nav-links">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
           <li><a href="#education">Education</a></li>
-          <li><a href="#services">Portfolio</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#services">Interests</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <div class="header-text">
+
+      <div class="header-text" data-aos="zoom-in">
         <p>Aspiring Developer</p>
-        <h1>Hi, I'm <span>Yash</span><br />from India</h1>
+        <h1><span class="typing">Hi, I'm Yash<br />from India</span></h1>
       </div>
     </div>
-  </div>
+  </header>
 
-  <!-- --------About-------- -->
-  <div id="About">
-    <div class="container">
-      <div class="row">
-        <div class="About-col-1">
-          <img src="20250328_141155.jpg" alt="Profile Image" />
-        </div>
-        <div class="About-col-2">
-          <h1 class="sub-title">About Me</h1>
-          <p>
-            Hi, I'm Yash! I am currently pursuing a Bachelor of Computer Applications (BCA) with a strong interest in software development, programming, and emerging technologies.
-            I enjoy exploring how technology can solve real-world problems and am constantly working on improving my coding skills.
-          </p>
+  <!-- ===== ABOUT ===== -->
+  <section id="about">
+    <div class="container about-center" data-aos="fade-up">
+      <h2>About Me</h2>
+      <p>
+        Hi, I’m Yash — a BCA student at PSIT with a passion for app development and data science. 
+        I love solving problems and believe coding becomes even more powerful when done as a team. 
+        My goal is to grow into a full-time developer, constantly learning and exploring new technologies. 
+        Beyond my studies, I enjoy experimenting with projects that challenge my creativity and push me 
+        to learn something new every day.
+      </p>
 
-          <div class="tab-titles">
-            <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
-            <p class="tab-links" onclick="openTab('experience')">Experience</p>
-            <p class="tab-links" onclick="openTab('education')">Education</p>
-          </div>
+      <!-- Tabs -->
+      <div class="tab-titles">
+        <p class="tab-links active-link" data-tab="skills">Skills</p>
+        <p class="tab-links" data-tab="experience">Experience</p>
+        <p class="tab-links" data-tab="education">Education</p>
+      </div>
 
-          <div class="tab-contents active-tab" id="skills">
-            <div class="tab-contents active-tab" id="skills">
-  <ul>
-    <li><span>Programming Languages</span><br>C, C++, Java, Python</li>
-    <li><span>Web Development</span><br>HTML, CSS, JavaScript, Bootstrap</li>
-    <li><span>Database Management</span><br>MySQL, Oracle</li>
-    <li><span>Software Engineering</span><br>SDLC, UML Diagrams</li>
-    <li><span>Operating Systems</span><br>Windows, Linux (Basic)</li>
-    <li><span>Version Control</span><br>Git, GitHub</li>
-    <li><span>Tools & IDEs</span><br>VS Code, Eclipse, NetBeans</li>
-    <li><span>Soft Skills</span><br>Problem Solving, Communication, Teamwork</li>
-  </ul>
-</div>
+      <!-- Skills -->
+      <div class="tab-contents active-tab" id="skills">
+        <ul>
+          <li><span>Programming</span><br />Proficient in C, C++, Java, and Python with a focus on problem-solving and logic building.</li>
+          <li><span>Web Development</span><br />Skilled in creating responsive websites using HTML, CSS, JavaScript, and Bootstrap.</li>
+          <li><span>Database</span><br />Knowledge of MySQL and Oracle for managing and querying structured data.</li>
+          <li><span>Software Engineering</span><br />Understanding of SDLC processes and UML for designing and documenting systems.</li>
+          <li><span>Operating Systems</span><br />Comfortable working with Windows and basic Linux environments.</li>
+          <li><span>Version Control</span><br />Experience with Git and GitHub for collaboration and project management.</li>
+          <li><span>Tools</span><br />Familiar with VS Code, Eclipse, and NetBeans for development and debugging.</li>
+          <li><span>Soft Skills</span><br />Strong in teamwork, communication, and creative problem-solving.</li>
+        </ul>
+      </div>
 
-          
-          </div>
-          <!-- Resume Download Button -->
-<div class="resume-section" data-aos="fade-up">
-  <a href="resume.pdf" download class="btn download-resume-btn">
-    <i class="fas fa-download"></i> Download Resume
-  </a>
-</div>
+      <!-- Experience -->
+      <div class="tab-contents" id="experience">
+        <ul>
+          <li>
+            <span>Learning & Exploration</span><br />
+            I am currently building my skills through personal projects, coding practice, and teamwork with peers. 
+            While I don’t yet have formal industry experience, I focus on constant learning to prepare for future development opportunities.
+          </li>
+        </ul>
+      </div>
 
-
-          <div class="tab-contents" id="experience">
-            <ul>
-              <li><span>No Prior Experience</span><br />Still learning and exploring.</li>
-            </ul>
-          </div>
-
-          <div class="tab-contents" id="education">
-            <ul>
-              <li><span>2025 - Present</span><br />BCA Student at PSIT</li>
-              <li><span>2023</span><br />12th Passed from Oxford Model Senior Secondary School</li>
-            </ul>
-          </div>
-
-        </div>
+      <!-- Education -->
+      <div class="tab-contents" id="education">
+        <ul>
+          <li>
+            <span>2025 – Present</span><br />
+            Pursuing Bachelor of Computer Applications (BCA) at PSIT with a focus on programming, app development, and data science.
+          </li>
+          <li>
+            <span>2023</span><br />
+            Completed Higher Secondary Education (12th) from Oxford Model Senior Secondary School, where I developed a strong interest in computer science and problem-solving.
+          </li>
+        </ul>
       </div>
     </div>
-  </div>
-  <!-- --------- Projects Section --------- -->
-<div id="projects">
-  <div class="container">
-    <h1 class="sub-title">Projects</h1>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="container">
+    <h1 class="sub-title" data-aos="zoom-in-up">Projects</h1>
     <div class="project-list">
-      <div class="project" data-aos="fade-up">
+      <div class="project" data-aos="flip-left">
         <i class="fas fa-laptop-code"></i>
         <h2>Portfolio Website</h2>
         <p>A responsive personal portfolio made using HTML, CSS, and JavaScript.</p>
         <a href="https://github.com/yourusername/portfolio" target="_blank">View Code</a>
       </div>
-      <div class="project" data-aos="fade-up" data-aos-delay="200">
+      <div class="project" data-aos="flip-right" data-aos-delay="200">
         <i class="fab fa-react"></i>
         <h2>React App</h2>
         <p>Weather forecast application built using React and OpenWeatherMap API.</p>
         <a href="https://github.com/yourusername/weather-app" target="_blank">View Code</a>
       </div>
-    </div>
-  </div>
-</div>
-
-
-  <!-- --------Services-------- -->
-  <div id="services">
-    <div class="container">
-      <h1 class="sub-title">My Services</h1>
-      <div class="services-list">
-        <div>
-          <i class="fas fa-code"></i>
-          <h2>Web Design</h2>
-          <p>
-            I can create attractive and responsive websites using HTML, CSS, and JavaScript, focusing on both design and user experience.
-          </p>
-          <a href="#">Learn more</a>
-        </div>
+      <div class="project" data-aos="zoom-in" data-aos-delay="400">
+        <i class="fas fa-gamepad"></i>
+        <h2>Rock Paper Scissors</h2>
+        <p>Fun game with animations and score tracking.</p>
+        <a href="rps-game.html">Play Game</a>
       </div>
     </div>
-  </div>
-  <!-- ---------- Contact Section ---------- -->
-<div id="contact">
-  <div class="container">
-    <h1 class="sub-title">Contact Me</h1>
-    <form action="https://formspree.io/f/your-form-id" method="POST" data-aos="fade-up">
-      <input type="text" name="Name" placeholder="Your Name" required>
-      <input type="email" name="Email" placeholder="Your Email" required>
-      <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
-      <button type="submit" class="btn">Send Message</button>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section id="services" class="container">
+    <h1 class="sub-title" data-aos="zoom-in">My Area Of Interest</h1>
+    <div class="services-list">
+      <div data-aos="fade-up">
+        <i class="fas fa-code" data-aos="zoom-in" data-aos-delay="100"></i>
+        <h2>Web Design</h2>
+        <p>
+          I create attractive and responsive websites using HTML, CSS, and JavaScript, focusing on both design and user experience.
+        </p>
+        <a href="#">Learn more</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="container">
+    <h1 class="sub-title" data-aos="zoom-in-up">Contact Me</h1>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <input type="text" name="Name" placeholder="Your Name" required data-aos="fade-up" data-aos-delay="100" />
+      <input type="email" name="Email" placeholder="Your Email" required data-aos="fade-up" data-aos-delay="200" />
+      <textarea name="Message" rows="6" placeholder="Your Message" required data-aos="fade-up" data-aos-delay="300"></textarea>
+      <button type="submit" class="btn" data-aos="fade-up" data-aos-delay="400">Send Message</button>
     </form>
-  </div>
-</div>
+  </section>
 
-
-  <!-- --------JavaScript-------- -->
+  <!-- ===== JS ===== -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    var tabLinks = document.getElementsByClassName("tab-links");
-    var tabContents = document.getElementsByClassName("tab-contents");
+    AOS.init({ duration: 1000, once: true });
 
-    function openTab(tabName) {
-      for (let tabLink of tabLinks) {
-        tabLink.classList.remove("active-link");
-      }
-      for (let tabContent of tabContents) {
-        tabContent.classList.remove("active-tab");
-      }
-      event.currentTarget.classList.add("active-link");
-      document.getElementById(tabName).classList.add("active-tab");
-    }
+    // Tab Switching
+    const tabLinks = document.querySelectorAll(".tab-links");
+    const tabContents = document.querySelectorAll(".tab-contents");
+    tabLinks.forEach(tab => {
+      tab.addEventListener("click", () => {
+        tabLinks.forEach(t => t.classList.remove("active-link"));
+        tabContents.forEach(c => c.classList.remove("active-tab"));
+        tab.classList.add("active-link");
+        document.getElementById(tab.dataset.tab).classList.add("active-tab");
+      });
+    });
+
+    // Theme Toggle
+    const toggleBtn = document.getElementById("theme-toggle");
+    toggleBtn.addEventListener("click", () => {
+      document.body.classList.toggle("light-theme");
+      toggleBtn.innerHTML = document.body.classList.contains("light-theme")
+        ? "<i class='fas fa-moon'></i>"
+        : "<i class='fas fa-sun'></i>";
+    });
   </script>
-  <!-- AOS Scroll Animation -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 1000,
-    once: true
-  });
-</script>
-
-<!-- Dark/Light Toggle -->
-<script>
-  const toggleBtn = document.getElementById("theme-toggle");
-  toggleBtn.addEventListener("click", () => {
-    document.body.classList.toggle("light-theme");
-    toggleBtn.innerHTML = document.body.classList.contains("light-theme")
-      ? "<i class='fas fa-moon'></i>"
-      : "<i class='fas fa-sun'></i>";
-  });
-</script>
-
 </body>
 </html>
